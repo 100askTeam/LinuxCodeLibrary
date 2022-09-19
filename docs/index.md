@@ -1,23 +1,20 @@
 [ [中文](index.md) | [English](index.EN.md) ]
-# 东山Pi简述(Introduction)
 
-## 什么是东山Pi系列开发板？
-**注意: PI系列主板由于没有任何利润空间，所以只能提供在线入门文档和相关的参考资料，没有专门的技术支持和服务，请大家根据自己情况进行合理购买。**<br>
+# 站点简述(Introduction)
 
-东山Pi系列开发是深圳百问网公司为想学习嵌入式Linux开发同学专门设计定做的低价超高性价比开发板,我们的在线文档更倾向于入门 ，对于深入部分我们会根据SOC特性设计专门对应的底板出相关的深入课程。
+## 如何阅读此站？
 
-## 如何阅读此网站？
-  首先 您要清楚您的开发板名称，目前我们有东山Pi壹号和东山Pi柒号，请根据开发板背面的丝印图案选择页面上方导航栏的页面点击进去进行阅读学习。
 
-  | 板子名称        | 页面地址   |
-  | :-----------   | :------- |
-  | 東山Pi壹号  | [点击跳转](DongshanPi-One/01-BoardIntroduction/) |
-  | 東山Pi柒号  | [点击跳转](DongshanPi-Seven/01-BoardIntroduction/) |
-  | 東山哪吒STU  | [点击跳转](DongshanNezhaSTU/01-BoardIntroduction/) |
+## 如何参与共享？
 
-## 配套的交流社区
-* 东山PI壹号QQ技术交流群：684518734
-* 东山哪吒STU QQ技术交流群：718037873
+1.应用：https://github.com/100askTeam/Stage1_D1s-Applications
+2.驱动：https://github.com/100askTeam/Stage2_D1s-DeviceDriver
+3.组件：https://github.com/100askTeam/Stage3_D1s-Components
+4.系统：https://github.com/100askTeam/Stage4_D1s-System
+
+
+## 您将获得什么？
+
 
 ## 关于开源协议
   此页面使用了开源的Mkdoc文档框架，文档站点托管在GitHub上，每个页面都会有编辑按钮，大家可以一起参与编辑或者提问改进此文档。
