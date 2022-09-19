@@ -8,8 +8,11 @@
 ## 如何参与共享？
 
 1.应用：https://github.com/100askTeam/Stage1_D1s-Applications
+
 2.驱动：https://github.com/100askTeam/Stage2_D1s-DeviceDriver
+
 3.组件：https://github.com/100askTeam/Stage3_D1s-Components
+
 4.系统：https://github.com/100askTeam/Stage4_D1s-System
 
 
