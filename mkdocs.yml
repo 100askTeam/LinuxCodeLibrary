@@ -139,20 +139,12 @@ nav:
   - 根页面:
     - index.md
   - 应用开发:
-    - 主板简介: 'DongshanPi-One/01-BoardIntroduction.md'
-    - 配套资源: 'DongshanPi-One/02-SupportingResources.md'
-    - 快速上手:
-      - 连接开发板: 'DongshanPi-One/03-QuickStart.md'
-      - 常见问题: 'DongshanPi-One/03-SomeQustion.md'
+    - 简述: 'Stage1-Applications/01-Introduction.md'
   - 驱动开发:
-    - 主板简介: 'DongshanPi-Seven/01-BoardIntroduction.md'
-    - 配套资源: 'DongshanPi-Seven/02-SupportingResources.md' 
-    - 快速上手:
-      - 连接开发板: 'DongshanPi-Seven/03-QuickStart.md'
-      - 烧写&恢复系统: 'DongshanPi-Seven/04.FlashDefaultSystem.md'
-      - 其它常见问题: 'DongshanPi-Seven/04-SomeQustion.md'
+    - 简述: 'Stage2-DeviceDriver/01-Introduction.md'
   - 组件开发:
-    - 主板简介: 'DongshanNezhaSTU/01-BoardIntroduction.md'
+    - 简述: 'Stage3-Components/01-Introduction.md'
   - 系统开发:
-     - 简介: 'About.md'
+    - 简述: 'Stage4-System/01-Introduction.md'
+
      
