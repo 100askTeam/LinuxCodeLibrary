@@ -5,17 +5,18 @@ site_author: 100askTeam
 site_description: >-
   100ASKTeam boards Start Page.
 copyright: Copyright &copy; 2008 - 2022 100ask Team
-edit_uri: https://github.com/100askTeam/TutorialCo-creation/tree/master/docs
+edit_uri: edit/master/docs/
+#edit_uri: https://github.com/100askTeam/TutorialCo-creation/tree/master/docs
+repo_url: https://github.com/100askTeam/TutorialCo-creation
+repo_name: 100askTeam/TutorialCo-creation
 
 # Configuration
 theme:
-  name: null
-  custom_dir: !ENV [THEME_DIR, "material"]
-  language: custom
+  name: material
+  custom_dir: overrides
   # Static files
   static_templates:
     - 404.html
-
   # Don't include MkDocs' JavaScript
   include_search_page: true
   search_index_only: true
@@ -26,10 +27,10 @@ theme:
     - content.code.annotate
     # - content.tabs.link
     - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
     # - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
@@ -37,11 +38,12 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    # - toc.follow
     # - toc.integrate
   palette:
     - scheme: default
       primary: teal
-      accent: teal
+      accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -61,34 +63,26 @@ theme:
 # Plugins
 plugins:
   - search
+  - markmap:
+      base_path: docs
+      encoding: utf-8
+      file_extension: .mm.md
+      d3_version: 6.7.0
+      lib_version: 0.14.1
+      view_version: 0.14.0 
+#  - offline  
   - minify:
       minify_html: true
+#  - social:
+#      cards_color:
+#        fill: "#0FF1CE" 
+#        text: "#FFFFFF"
 
 extra:
   analytics:
     provider: google
     property: G-LZX4K52CZ1
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/emoticon-happy-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/emoticon-sad-outline
-          name: This page could be improved
-          data: 0
-          note: >- # 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target=_blank>feedback form</a>.    
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: 中文
-      link: /zh/
-      lang: zh
+  homepage: https://lib.100ask.net
       
 #  disqus: dongshanpi-com
 
@@ -101,20 +95,26 @@ markdown_extensions:
   - footnotes
   - meta
   - md_in_html
+  - tables  
   - toc:
       slugify: !!python/name:pymdownx.slugs.uslugify  
   - toc:
       permalink: true
+  - toc:
+      title: On this page
+  - toc:
+      permalink_title: Anchor link to this section for reference
+  - toc:
+      toc_depth: 3      
+  - pymdownx.arithmatex:
+      generic: true        
   - pymdownx.arithmatex:
       generic: true
+
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -123,28 +123,50 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde  
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true   
+  - pymdownx.snippets      
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid-experimental
+          class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+      custom_checkbox: true               
   
 # Page tree
 nav:
-  - 根页面:
+  - 首页:
     - index.md
-  - 应用开发:
+  - LinuxC基础:
     - 简述: 'Stage1-Applications/01-Introduction.md'
-  - 驱动开发:
+    - 简述:
+      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
+      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
+      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
+      - 测试页面1: 'Stage1-Applications/01-Introduction.md'                  
+  - 应用组件开发:
     - 简述: 'Stage2-DeviceDriver/01-Introduction.md'
-  - 组件开发:
+  - 设备驱动开发:
     - 简述: 'Stage3-Components/01-Introduction.md'
   - 系统开发:
     - 简述: 'Stage4-System/01-Introduction.md'
 
-     
+extra_javascript:
+  - javascripts/shortcuts.js
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/d3@6.7.0/dist/d3.min.js
+  - https://unpkg.com/markmap-lib@0.14.1/dist/browser/index.min.js
+  - https://unpkg.com/markmap-view@0.14.0/dist/index.min.js  
