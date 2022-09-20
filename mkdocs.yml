@@ -83,6 +83,14 @@ extra:
     provider: google
     property: G-LZX4K52CZ1
   homepage: https://lib.100ask.net
+  alternate:
+    - name: 中文简体
+      link: /
+      lang: zh  
+    - name: English
+      link: /en/ 
+      lang: en
+
       
 #  disqus: dongshanpi-com
 
@@ -144,21 +152,88 @@ markdown_extensions:
   
 # Page tree
 nav:
-  - 首页:
-    - index.md
+  - 站点介绍:
+    - 简述: index.md
+    - LinuxC基础: 'index.md'
+    - 应用组件开发: 'index.md'
+    - 设备驱动开发: 'index.md'
+    - 系统开发: 'index.md'        
   - LinuxC基础:
-    - 简述: 'Stage1-Applications/01-Introduction.md'
-    - 简述:
-      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
-      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
-      - 测试页面1: 'Stage1-Applications/01-Introduction.md'
-      - 测试页面1: 'Stage1-Applications/01-Introduction.md'                  
+    - 基础知识:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+    - IO操作:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+    - Socket套接字:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+    - 线程进程:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
   - 应用组件开发:
-    - 简述: 'Stage2-DeviceDriver/01-Introduction.md'
+    - 'Stage3-DeviceDriver/01-Introduction.md'
+    - 显示系列组件: 'Stage3-DeviceDriver/01-Introduction.md' 
+    - LVGL组件: 
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - SDL组件: 
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - Wayland组件: 
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - QT5组件: 
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'      
+    - 网络系列组件: 'index.md'
+    - MQTT组件:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - libnl组件:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - WPA组件:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+    - BlueZ组件:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'      
   - 设备驱动开发:
-    - 简述: 'Stage3-Components/01-Introduction.md'
-  - 系统开发:
-    - 简述: 'Stage4-System/01-Introduction.md'
+    - GPIO子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - LED灯: 'Stage3-DeviceDriver/01-Introduction.md'
+      - KEY按键: 'Stage3-DeviceDriver/01-Introduction.md'
+    - I2C子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - ssd1306-OLED: 'Stage3-DeviceDriver/01-Introduction.md'
+      - GT911触摸屏: 'Stage3-DeviceDriver/01-Introduction.md'
+    - SPI子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'
+    - 显示子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - RGB-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - MIPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+
+  - 系统开发: 
+    - NXP系统:
+      - 简述: 'Stage4-System/01-Introduction.md' 
+      - IMX6ULL: 'Stage4-System/01-Introduction.md'
+    - ST系统:
+      - 简述: 'Stage4-System/01-Introduction.md' 
+      - STM32MP1: 'Stage4-System/01-Introduction.md'
+    - 全志系统:
+      - 简述: 'Stage4-System/01-Introduction.md' 
+      - D1-H: 'Stage4-System/01-Introduction.md'
+      - D1s: 'Stage4-System/01-Introduction.md'
+      - T113: 'Stage4-System/01-Introduction.md'
+      - V853: 'Stage4-System/01-Introduction.md'      
+    - 星宸系统:
+      - 简述: 'Stage4-System/01-Introduction.md' 
+      - SSD202: 'Stage4-System/01-Introduction.md'            
+
 
 extra_javascript:
   - javascripts/shortcuts.js

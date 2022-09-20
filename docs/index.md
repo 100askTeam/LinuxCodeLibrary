@@ -1,58 +1,20 @@
-[ [中文](index.md) | [English](index.EN.md) ]
-
 # 站点简述(Introduction)
+
+``` mermaid
+sequenceDiagram
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+      John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
 
 ## 如何阅读此站？
 
-```markmap
----
-markmap:
-  colorFreezeLevel: 2
----
 
-# markmap
-
-## Links
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/gera2ld/markmap)
-
-## Links
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/gera2ld/markmap)
-
-## Links
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/gera2ld/markmap)
-
-## Links
-
-- <https://markmap.js.org/>
-- [GitHub](https://github.com/gera2ld/markmap)
-## Related Projects
-
-- [coc-markmap](https://github.com/gera2ld/coc-markmap)
-- [gatsby-remark-markmap](https://github.com/gera2ld/gatsby-remark-markmap)
-
-## Features
-
-- links
-- **strong** ~~del~~ *italic* ==highlight==
-- multiline
-  text
-- `inline code`
--
-    ```js
-    console.log('code block');
-    ```
-- Katex
-  - $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-  - [More Katex Examples](#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md)
-- Now we can wrap very very very very long text based on `maxWidth` option
-
-```
 ## 如何参与共享？
 
 1.应用：https://github.com/100askTeam/Stage1_D1s-Applications
