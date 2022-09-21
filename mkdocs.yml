@@ -154,65 +154,100 @@ markdown_extensions:
 nav:
   - 站点介绍:
     - 简述: index.md
-    - LinuxC基础: 'index.md'
-    - 应用组件开发: 'index.md'
-    - 设备驱动开发: 'index.md'
-    - 系统开发: 'index.md'        
-  - LinuxC基础:
-    - 基础知识:
+    - LinuxC基础: '01-LinuxCprogrammers.md'
+    - 应用组件开发: '02-Components.md'
+    - 设备驱动开发: '03-DeviceDriver.md'
+    - 系统开发: '04-System.md'
+  - LinuxC基础编程:
+    - C基础知识:
+      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+    - GCC编译器:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
+    - Makefile:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
+    - 文件与IO操作:
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - IO操作:
+    - Shell编程:
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - Socket套接字:
+    - 正则表达式:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
+    - 进程线程:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
+    - 进程通信:
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
+    - 网络编程:
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - 线程进程:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+
   - 应用组件开发:
-    - 'Stage3-DeviceDriver/01-Introduction.md'
-    - 显示系列组件: 'Stage3-DeviceDriver/01-Introduction.md' 
+    - 显示系列组件: 'Stage2-Components/01-Introduction.md' 
     - LVGL组件: 
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md' 
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - SDL组件: 
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md' 
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - Wayland组件: 
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md' 
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - QT5组件: 
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'      
-    - 网络系列组件: 'index.md'
+      - 简述: 'Stage2-Components/01-Introduction.md' 
+      - 开发示例: 'Stage2-Components/01-Introduction.md'      
+    - 网络系列组件: 'Stage2-Components/01-Introduction.md'
     - MQTT组件:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md'
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - libnl组件:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md'
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - WPA组件:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 简述: 'Stage2-Components/01-Introduction.md'
+      - 开发示例: 'Stage2-Components/01-Introduction.md'
     - BlueZ组件:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
-      - 开发示例: 'Stage3-DeviceDriver/01-Introduction.md'      
+      - 简述: 'Stage2-Components/01-Introduction.md'
+      - 开发示例: 'Stage2-Components/01-Introduction.md'      
   - 设备驱动开发:
+    - Pinctrl子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - LED灯: 'Stage3-DeviceDriver/01-Introduction.md'
+      - KEY按键: 'Stage3-DeviceDriver/01-Introduction.md'  
     - GPIO子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
       - LED灯: 'Stage3-DeviceDriver/01-Introduction.md'
       - KEY按键: 'Stage3-DeviceDriver/01-Introduction.md'
     - I2C子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - ssd1306-OLED: 'Stage3-DeviceDriver/01-Introduction.md'
+      - SSD1306-OLED: 'Stage3-DeviceDriver/01-Introduction.md'
       - GT911触摸屏: 'Stage3-DeviceDriver/01-Introduction.md'
+    - Interrupt子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'            
     - SPI子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
       - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
       - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'
-    - 显示子系统:
+    - Input子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'      
+    - UART子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'
+    - PCI/PCI-e子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
+      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'      
+    - LCD驱动:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
       - RGB-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
       - MIPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
