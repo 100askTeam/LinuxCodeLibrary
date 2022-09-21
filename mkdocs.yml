@@ -1,14 +1,14 @@
 # Project information
-site_name: 百问网文档共创站点
-site_url: https://github.com/100askTeam/TutorialCo-creation.git
+site_name: 100askTeam eLinux Code Library
+site_url: https://github.com/100askTeam/LinuxCodeLibrary.git
 site_author: 100askTeam
 site_description: >-
   100ASKTeam boards Start Page.
 copyright: Copyright &copy; 2008 - 2022 100ask Team
 edit_uri: edit/master/docs/
 #edit_uri: https://github.com/100askTeam/TutorialCo-creation/tree/master/docs
-repo_url: https://github.com/100askTeam/TutorialCo-creation
-repo_name: 100askTeam/TutorialCo-creation
+repo_url: https://github.com/100askTeam/LinuxCodeLibrary
+repo_name: 100askTeam/LinuxCodeLibrary
 
 # Configuration
 theme:
