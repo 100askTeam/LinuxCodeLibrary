@@ -27,7 +27,7 @@ theme:
     - content.code.annotate
     # - content.tabs.link
     - header.autohide
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     # - navigation.instant
     # - navigation.sections
@@ -77,12 +77,13 @@ plugins:
 #      cards_color:
 #        fill: "#0FF1CE" 
 #        text: "#FFFFFF"
-
+  - search:
+      jieba_dict: dict.txt 
 extra:
   analytics:
     provider: google
     property: G-LZX4K52CZ1
-  homepage: https://lib.100ask.net
+  homepage: https://code.100ask.net
   alternate:
     - name: 中文简体
       link: /
@@ -131,8 +132,6 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.tasklist:
-      custom_checkbox: true
   - pymdownx.tilde  
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji 
@@ -147,6 +146,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  - def_list      
   - pymdownx.tasklist:
       custom_checkbox: true               
   
@@ -155,119 +155,81 @@ nav:
   - 站点介绍:
     - 简述: index.md
     - LinuxC基础: '01-LinuxCprogrammers.md'
-    - 应用组件开发: '02-Components.md'
-    - 设备驱动开发: '03-DeviceDriver.md'
-    - 系统开发: '04-System.md'
+    - Linux组件开发: '02-Components.md'
+    - Linux设备驱动开发: '03-DeviceDriver.md'
+    - Linux系统开发: '04-System.md'
   - LinuxC基础编程:
     - C基础知识:
       - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - GCC编译器:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
-    - Makefile:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
-    - 文件与IO操作:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
     - Shell编程:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - 正则表达式:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
-    - 进程线程:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
-    - 进程通信:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'      
-    - 网络编程:
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 测试页面1: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-
-  - 应用组件开发:
-    - 显示系列组件: 'Stage2-Components/01-Introduction.md' 
+      - 文件管理类命令: 'Stage1-LinuxCprogrammers/LinuxShell/Filemanagement.md'
+      - 文档编辑类命令: 'Stage1-LinuxCprogrammers/LinuxShell/DocumentEditing.md'
+      - 系统管理: 'Stage1-LinuxCprogrammers/LinuxShell/SystemManagement.md' 
+      - 磁盘操作: 'Stage1-LinuxCprogrammers/LinuxShell/DiskOperation.md'
+      - 网络管理: 'Stage1-LinuxCprogrammers/LinuxShell/NetworkManagement.md'
+  - Linux组件开发:
+    - 显示系列组件: 'Stage2-Components/AudioAndVideoApplications.md' 
     - LVGL组件: 
       - 简述: 'Stage2-Components/01-Introduction.md' 
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - SDL组件: 
-      - 简述: 'Stage2-Components/01-Introduction.md' 
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - Wayland组件: 
-      - 简述: 'Stage2-Components/01-Introduction.md' 
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - QT5组件: 
-      - 简述: 'Stage2-Components/01-Introduction.md' 
-      - 开发示例: 'Stage2-Components/01-Introduction.md'      
-    - 网络系列组件: 'Stage2-Components/01-Introduction.md'
+      - 6ULLPro-开发示例: 'Stage2-Components/01-Introduction.md'
+      - MP157Pro-开发示例: 'Stage2-Components/01-Introduction.md'
+    - 网络系列组件: 'Stage2-Components/NetworkingApplications.md'
     - MQTT组件:
-      - 简述: 'Stage2-Components/01-Introduction.md'
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - libnl组件:
-      - 简述: 'Stage2-Components/01-Introduction.md'
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - WPA组件:
-      - 简述: 'Stage2-Components/01-Introduction.md'
-      - 开发示例: 'Stage2-Components/01-Introduction.md'
-    - BlueZ组件:
-      - 简述: 'Stage2-Components/01-Introduction.md'
-      - 开发示例: 'Stage2-Components/01-Introduction.md'      
+      - 简述: 'Stage2-Components/NetworkingApplications/MQTT/01-Introduction.md'
+      - 6ULLPro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/6ULLPro-Example.md' 
+      - MP157Pro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/MP157Pro-Example.md'
   - 设备驱动开发:
-    - Pinctrl子系统:
+    - NXP-GPIO子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'       
+      - 6ULLPro-LED灯: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-leddriver.md'
+      - 6ULLPro-按键: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-keydriver.md'
+      - 6ULLPro-SR501:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/03-sr501driver.md'
+      - 6ULLPro-SR04:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/04-SR04driver.md'
+      - 6ULLPro-DS18B20: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/06-ds18b20driver.md'
+      - 6ULLPro-DHT11:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/05-dht11driver.md'
+      - 6ULLPro-HS0038:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/07-hs0038driver.md'
+    - ST-GPIO子系统:      
+      - MP157Pro-LED灯: 'Stage3-DeviceDriver/St/STM32MP157/Pro/01-leddriver.md'
+      - MP157Pro-按键: 'Stage3-DeviceDriver/St/STM32MP157/Pro/02-keydriver.md'
+      - MP157Pro-SR501:  'Stage3-DeviceDriver/St/STM32MP157/Pro/03-sr501driver.md'
+      - MP157Pro-SR04:  'Stage3-DeviceDriver/St/STM32MP157/Pro/04-SR04driver.md'
+      - MP157Pro-DS18B20: 'Stage3-DeviceDriver/St/STM32MP157/Pro/06-ds18b20driver.md'
+      - MP157Pro-DHT11:  'Stage3-DeviceDriver/St/STM32MP157/Pro/05-dht11driver.md'
+      - MP157Pro-HS0038:  'Stage3-DeviceDriver/St/STM32MP157/Pro/07-hs0038driver.md'     
+    - NXP-I2C子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - 6ULLPro-AT24c02模块:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/08-at24c02driver.md'
+    - ST-I2C子系统:
+      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'
+      - MP157Pro-AT24c02模块:  'Stage3-DeviceDriver/St/STM32MP157/Pro/08-at24c02driver.md'
+    - NXP-SPI子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - LED灯: 'Stage3-DeviceDriver/01-Introduction.md'
-      - KEY按键: 'Stage3-DeviceDriver/01-Introduction.md'  
-    - GPIO子系统:
+      - 6ULLPro-OLED: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/09-oleddriver.md'
+      - 6ULLPro-DAC模块: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/10-dacdriver.md'
+    - ST-SPI子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - LED灯: 'Stage3-DeviceDriver/01-Introduction.md'
-      - KEY按键: 'Stage3-DeviceDriver/01-Introduction.md'
-    - I2C子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SSD1306-OLED: 'Stage3-DeviceDriver/01-Introduction.md'
-      - GT911触摸屏: 'Stage3-DeviceDriver/01-Introduction.md'
-    - Interrupt子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'            
-    - SPI子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'
-    - Input子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'      
-    - UART子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'
-    - PCI/PCI-e子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - SPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - ADX135: 'Stage3-DeviceDriver/01-Introduction.md'      
-    - LCD驱动:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - RGB-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
-      - MIPI-LCD: 'Stage3-DeviceDriver/01-Introduction.md'
+      - MP157Pro-OLED: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/09-oleddriver.md'
+      - MP157Pro-DAC模块: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/10-dacdriver.md'      
 
   - 系统开发: 
+    - Git工具使用:
+      - 简述: 'Stage4-System/01-Introduction.md' 
     - NXP系统:
       - 简述: 'Stage4-System/01-Introduction.md' 
-      - IMX6ULL: 'Stage4-System/01-Introduction.md'
+      - IMX6ULLPro: 'Stage4-System/01-Introduction.md'
+      - IMX6ULLMini: 'Stage4-System/01-Introduction.md'
     - ST系统:
       - 简述: 'Stage4-System/01-Introduction.md' 
-      - STM32MP1: 'Stage4-System/01-Introduction.md'
+      - STM32MP157Pro: 'Stage4-System/01-Introduction.md'
     - 全志系统:
       - 简述: 'Stage4-System/01-Introduction.md' 
-      - D1-H: 'Stage4-System/01-Introduction.md'
-      - D1s: 'Stage4-System/01-Introduction.md'
-      - T113: 'Stage4-System/01-Introduction.md'
+      - 东山哪吒D1-H: 'Stage4-System/01-Introduction.md'
+      - T113Pro: 'Stage4-System/01-Introduction.md'
       - V853: 'Stage4-System/01-Introduction.md'      
     - 星宸系统:
       - 简述: 'Stage4-System/01-Introduction.md' 
-      - SSD202: 'Stage4-System/01-Introduction.md'            
+      - SSD202Pro: 'Stage4-System/01-Introduction.md'            
 
 
 extra_javascript:

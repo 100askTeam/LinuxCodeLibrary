@@ -1,33 +1,9 @@
-# 站点简述(Introduction)
+# LinuxC简述(Introduction)
 
-``` mermaid
-sequenceDiagram
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-      John->>John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
-```
-
-## 如何阅读此站？
 
 
 ## 如何参与共享？
-
-1.应用：https://github.com/100askTeam/Stage1_D1s-Applications
-
-2.驱动：https://github.com/100askTeam/Stage2_D1s-DeviceDriver
-
-3.组件：https://github.com/100askTeam/Stage3_D1s-Components
-
-4.系统：https://github.com/100askTeam/Stage4_D1s-System
+* Linux基础：https://github.com/100askTeam/Stage1-Applications
+* 交流社区：https://forums.100ask.net/c/elinuxdev/23
 
 
-## 您将获得什么？
-
-
-## 关于开源协议
-  此页面使用了开源的Mkdoc文档框架，文档站点托管在GitHub上，每个页面都会有编辑按钮，大家可以一起参与编辑或者提问改进此文档。
