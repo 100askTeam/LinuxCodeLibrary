@@ -148,7 +148,13 @@ markdown_extensions:
       alternate_style: true
   - def_list      
   - pymdownx.tasklist:
-      custom_checkbox: true               
+      custom_checkbox: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
   
 # Page tree
 nav:
@@ -159,22 +165,39 @@ nav:
     - Linux设备驱动开发: '03-DeviceDriver.md'
     - Linux系统开发: '04-System.md'
   - LinuxC基础编程:
-    - C基础知识:
-      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
-    - Shell编程:
+    - LinuxShell:
       - 文件管理类命令: 'Stage1-LinuxCprogrammers/LinuxShell/Filemanagement.md'
       - 文档编辑类命令: 'Stage1-LinuxCprogrammers/LinuxShell/DocumentEditing.md'
       - 系统管理: 'Stage1-LinuxCprogrammers/LinuxShell/SystemManagement.md' 
       - 磁盘操作: 'Stage1-LinuxCprogrammers/LinuxShell/DiskOperation.md'
-      - 网络管理: 'Stage1-LinuxCprogrammers/LinuxShell/NetworkManagement.md'
+      - 网络管理: 'Stage1-LinuxCprogrammers/LinuxShell/NetworkManagement.md'  
+    - C基础知识:
+      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+      - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
+    - MakeFile:
+      - 基本语法: 'Stage1-LinuxCprogrammers/MakeFile/01-Introduction.md'
+    - GNU工具:
+      - GCC: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
+      - G++: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
+      - GDB: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
+      - OBJDUMP: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
+    - 文件/IO:
+      - C基础: 'Stage1-LinuxCprogrammers/CFileinputoutput/01-Introduction.md'    
+    - 进程线程:
+      - C基础: 'Stage1-LinuxCprogrammers/ProcessThread/01-Introduction.md'    
+    - 进程通信:
+      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'    
+    - 网络编程:
+      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'    
+    - 正则表达式:
+      - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'    
   - Linux组件开发:
-    - 显示系列组件: 'Stage2-Components/AudioAndVideoApplications.md' 
+    - 音频显示组件: 'Stage2-Components/AudioAndVideoApplications.md' 
     - LVGL组件: 
       - 简述: 'Stage2-Components/01-Introduction.md' 
       - 6ULLPro-开发示例: 'Stage2-Components/01-Introduction.md'
       - MP157Pro-开发示例: 'Stage2-Components/01-Introduction.md'
-    - 网络系列组件: 'Stage2-Components/NetworkingApplications.md'
+    - 网络组件: 'Stage2-Components/NetworkingApplications.md'
     - MQTT组件:
       - 简述: 'Stage2-Components/NetworkingApplications/MQTT/01-Introduction.md'
       - 6ULLPro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/6ULLPro-Example.md' 
