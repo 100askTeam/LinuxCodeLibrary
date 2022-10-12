@@ -1,16 +1,26 @@
 # led实验说明
 
+
+
 ## 1.硬件介绍
+
 本节实验使用到 100ask_IMX6ULL-PRO 开发板上的 LED灯。
+
+
 
 ## 2.看原理图确定引脚
 
 打开当前目录的`100ask_imx6ull_v1.1.pdf`，100ASK_IMX6ULL使用的LED原理图如下，可知引脚是GPIO5_3：
 
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_led_pin.jpg)
+
+
+
 ## 3.使用设备树工具
 
 在设备树工具中，如下图操作：
 
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_IMX_tool.jpg)
 
 把下面这段代码复制到设备树里
 
@@ -35,7 +45,7 @@
 
 找到`&iomuxc_snvc`节点并放在`&iomuxc_snvc`节点下面，并自己修改名称：
 
-
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_modify_devicetree.jpg)
 
 
 
@@ -50,7 +60,7 @@
     };
 ```
 
-![devitree](devicetree.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_devicetree.jpg)
 
 
 
@@ -58,7 +68,7 @@
 
 在目录`~/100ask_imx6ull-sdk/Linux-4.9.88`下,使用命令`make dtbs`
 
-![make_dtbs](make_dtbs.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_make_dtbs.jpg)
 
 
 
@@ -93,7 +103,7 @@ book@100ask:~/100ask_imx6ull-sdk/Linux-4.9.88$ cp arch/arm/boot/dts/100ask_imx6u
 ls /proc/device-tree
 ```
 
-![device_tree](device_tree.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_device_tree.jpg)
 
 
 
@@ -135,7 +145,7 @@ obj-m += leddrv.o
 
 在实验目录下输入如下命令来编译驱动模块：
 
-![](make.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_make.jpg)
 
 编译成功后，将生成的`leddrv.ko`和`ledtest` 拷贝到NFS，执行命令如下：
 
@@ -166,9 +176,9 @@ insmod leddrv.ko
 ./led_test /dev/100ask_led0 off
 ```
 
-实验现象，发现开发板上的led点亮：
+实验现象，发现开发板上的绿色led点亮：
 
-![](test.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_test.jpg)
 
 
 
@@ -182,14 +192,14 @@ insmod leddrv.ko
 
 ①搜索`MX6ULL_PAD_SNVS_TAMPER3__GPIO5_IO03`，若发现此引脚在其他地方也被占用
 
-![](pin_occupy_.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_pin_occupy_.jpg)
 
 ②再搜索`pinctrl_leds`，得到如下信息：
 
-![](pinctrl_leds.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_pinctrl_leds.jpg)
 
 ③解决办法：
 
 如下图处加上**status = "disabled";** 这句话
 
-![](disable.jpg)
+![](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Nxp/IMX6ULL/Pro/01-leddriver_disable.jpg)

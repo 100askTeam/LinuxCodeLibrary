@@ -204,9 +204,8 @@ nav:
       - MP157Pro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/MP157Pro-Example.md'
   - 设备驱动开发:
     - NXP-GPIO子系统:
-      - 简述: 'Stage3-DeviceDriver/01-Introduction.md'       
       - 6ULLPro-LED灯: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-leddriver.md'
-      - 6ULLPro-按键: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-keydriver.md'
+      - 6ULLPro-按键: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/02-keydriver.md'
       - 6ULLPro-SR501:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/03-sr501driver.md'
       - 6ULLPro-SR04:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/04-SR04driver.md'
       - 6ULLPro-DS18B20: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/06-ds18b20driver.md'
@@ -232,8 +231,8 @@ nav:
       - 6ULLPro-DAC模块: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/10-dacdriver.md'
     - ST-SPI子系统:
       - 简述: 'Stage3-DeviceDriver/01-Introduction.md' 
-      - MP157Pro-OLED: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/09-oleddriver.md'
-      - MP157Pro-DAC模块: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/10-dacdriver.md'      
+      - MP157Pro-OLED: 'Stage3-DeviceDriver/St/STM32MP157/Pro/09-oleddriver.md'
+      - MP157Pro-DAC模块: 'Stage3-DeviceDriver/St/STM32MP157/Pro/10-dacdriver.md'      
 
   - 系统开发: 
     - Git工具使用:

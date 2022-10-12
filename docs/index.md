@@ -34,10 +34,11 @@
 
 
 ### 代码库使用步骤
-
+!!! note
+    详细的各个部分开发步骤请查看 左侧导航  [LinuxC基础](/01-LinuxCprogrammers/)  [Linux组件开发](/02-Components/) [Linux设备驱动开发](/03-DeviceDriver/) [Linux系统开发](04-System/) 页面，在页面内会有详细的各部分开发流程介绍。
 
 ``` mermaid
-graph TD
+graph LR
 A[0.准备硬件]-->B[1.获取Ubuntu虚拟机系统]-->2.配置Host开发环境-->3.获取Target工程示例-->4.Host端编译开发-->5.上传至Target开发板运行
 ```
 
