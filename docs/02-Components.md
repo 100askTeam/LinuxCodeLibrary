@@ -177,7 +177,7 @@ book@ubuntu1804:~/Stage2-Components/hello-world$ code .
 4.如果你不想手动上传编译出来的目标程序，也可以参考下图执行 点击 vscode 左上菜单栏界面里，`Run 1`按钮，再弹出的子页面里面 点击 `Start Debugging 2`来自动进入调试界面。
 ![runhellexample03](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Stage2-Components/runhellexample06.jpg)
 
-综上，完整演示了如何使用ubuntu系统vscode开发一个可以在开发板上运行的helloword程序，接下来就可以进入 [Linux组件开发](/Stage2-Components/)页面进行实际的工程开发了！
+综上，完整演示了如何使用ubuntu系统vscode开发一个可以在开发板上运行的helloword程序，接下来就可以进入 [Linux组件开发](/Stage2-Components/AudioAndVideoApplications/)页面进行实际的工程开发了！
 
 ## 文档完成度
 

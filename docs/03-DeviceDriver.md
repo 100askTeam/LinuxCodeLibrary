@@ -236,7 +236,7 @@ APP read : 100ask
 
 ![imx6ull-ldd05](https://cdn.staticaly.com/gh/DongshanPI/LinuxCodeLibrary-Photos@master/Stage2-Components/imx6ull-ldd05.jpg)
 
-到这里，我们就完整的在6ULL上运行了一个 驱动模块 以及测试程序了，更多设备驱动模块的开发示例 请大家访问 [设备驱动开发](/Stage3-DeviceDriver/)章节，**6ULLPro** 前缀的文章，里面有非常丰富的示例 给到大家。
+至此，我们就完整的在6ULL上运行了一个 驱动模块 以及测试程序了，更多设备驱动模块的开发示例 请大家访问 [设备驱动开发](/Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-leddriver/)章节，**6ULLPro** 前缀的文章，里面有非常丰富的示例 给到大家。
 
 ## STM32MP157-Pro开发步骤
 编写中........
