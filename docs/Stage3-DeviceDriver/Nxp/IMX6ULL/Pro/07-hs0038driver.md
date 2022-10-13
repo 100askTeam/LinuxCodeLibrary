@@ -1,4 +1,6 @@
 # IRDA红外遥控模块驱动实验
+* 工程所在仓库：https://github.com/100askTeam/Stage3-DeviceDriver
+* 默认情况此仓库已经提前给您放在 配套虚拟机 /home/book目录下。只需要进入 `/home/book/Stage3-DeviceDriver/IMX6ULL/07_hs0038`路径 就可以开始您的开发。
 
 > 红外遥控简介
 >

@@ -1,5 +1,7 @@
 # led实验说明
 
+* 工程所在仓库：https://github.com/100askTeam/Stage3-DeviceDriver
+* 默认情况此仓库已经提前给您放在 配套虚拟机 /home/book目录下。只需要进入 `/home/book/Stage3-DeviceDriver/IMX6ULL/01_led`路径 就可以开始您的开发。
 
 
 ## 1.硬件介绍

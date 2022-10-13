@@ -1,5 +1,6 @@
 ## EEPROM模块驱动实验
-
+* 工程所在仓库：https://github.com/100askTeam/Stage3-DeviceDriver
+* 默认情况此仓库已经提前给您放在 配套虚拟机 /home/book目录下。只需要进入 `/home/book/Stage3-DeviceDriver/IMX6ULL/08_at24c02`路径 就可以开始您的开发。
 > ### AT24C02简介
 >
 > AT24C02是基于I2C总线的存储器件，由于接口方便，体积小，数据掉电不丢失等特点，在仪器仪表及工业自动化控制中得到大量的应用。
