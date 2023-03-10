@@ -175,7 +175,12 @@ nav:
       - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
     - MakeFile:
-      - Makefile简介: 'Stage1-LinuxCprogrammers/MakeFile/01-Introduction.md'
+      - Makefile简述: 'Stage1-LinuxCprogrammers/MakeFile/01-Introduction.md'
+      - Makefile规则: 'Stage1-LinuxCprogrammers/MakeFile/02-regulation.md'
+      - Makefile变量: 'Stage1-LinuxCprogrammers/MakeFile/03-variable.md'
+      - Makefile模式规则与伪目标: 'Stage1-LinuxCprogrammers/MakeFile/04-Pattern_rules_pseudo-targets.md'
+      - Makefile函数: 'Stage1-LinuxCprogrammers/MakeFile/05-function.md'
+      - Makefile实例: 'Stage1-LinuxCprogrammers/MakeFile/06-examples.md'
     - GNU工具:
       - GCC: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
       - G++: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
@@ -203,7 +208,7 @@ nav:
       - 6ULLPro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/6ULLPro-Example.md' 
       - MP157Pro-开发示例: 'Stage2-Components/NetworkingApplications/MQTT/MP157Pro-Example.md'
   - 设备驱动开发:
-    - NXP-GPIO子系统:
+    -NXP-GPIO子系统:
       - 6ULLPro-LED灯: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/01-leddriver.md'
       - 6ULLPro-按键: 'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/02-keydriver.md'
       - 6ULLPro-SR501:  'Stage3-DeviceDriver/Nxp/IMX6ULL/Pro/03-sr501driver.md'
