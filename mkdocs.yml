@@ -175,7 +175,7 @@ nav:
       - C基础: 'Stage1-LinuxCprogrammers/01-Introduction.md'
       - 编译链接: 'Stage1-LinuxCprogrammers/01-Introduction.md'
     - MakeFile:
-      - 基本语法: 'Stage1-LinuxCprogrammers/MakeFile/01-Introduction.md'
+      - Makefile简介: 'Stage1-LinuxCprogrammers/MakeFile/01-Introduction.md'
     - GNU工具:
       - GCC: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
       - G++: 'Stage1-LinuxCprogrammers/GNU/01-Introduction.md'
